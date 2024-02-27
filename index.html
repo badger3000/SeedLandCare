@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-height,width=device-width">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
+    <link href="css/section-min.css" rel="stylesheet">
+    <link href="css/mobile-min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/logos/SeedFav.png">
+
+    <title>Seed Landcare</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="overlay"></div>
+        <nav class="navbar navbar-expand-md justify-content-center fixed-top">
+            <button class="navbar-toggler ml-1" data-target="#collapsingNavbar2" data-toggle="collapse" type="button"><i class="material-icons">menu</i></button>
+            <a href="index.html"><img src="./assets/logos/SeedLogo-desktab.svg" class="nav-logo"></a>
+            <div class="navbar-collapse navbar-fixed-top collapse justify-content-between align-items-left w-100 navbar-fixed-top" id="collapsingNavbar2">
+                <ul class="navbar-nav navbar-fixed-top mx-auto nav-anchor navbar-fixed-top">
+                    <li class="nav-item nav-effect">
+                        <a class="nav-link nav-set-link" href="#maintenance">Maintenance</a>
+                    </li>
+                    <li class="nav-item nav-effect">
+                        <a class="nav-link nav-set-link" href="#commercial">Construction</a>
+                    </li>
+                    <li class="nav-item nav-effect">
+                        <a class="nav-link nav-set-link" href="#residential">Residential</a>
+                    </li>
+                    <li class="nav-item nav-effect">
+                        <a class="nav-link nav-set-link" href="#unique-projects">Unique Projects</a>
+                    </li>
+                    <li class="nav-item nav-effect">
+                        <a class="nav-link nav-set-link" href="#design">Design</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav nav-btn flex-row justify-content-center flex-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link-btn" href="contact.html">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="modal" id="projectModal" role="dialog">
+            <div class="modal-container">
+                <div class="modal-dialog modal-md clearfix">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title" id="modal-title-category"></h1>
+                        </div>
+                        <div class="modal-body" id="modal-project-body">
+                            <div class="container">
+                                <div class="row modal-button-row">
+                                    <button type="button" class="close modal-close-button" data-dismiss="modal"> <img src="/assets/logos/close.svg" data-dismiss="modal"> </button>
+                                </div>
+                                <div class="row hero-carousel text-center" id="hero-node">
+                                    <div class="row text-center hidden hero-carousel col-12" id="hero-sub-node">
+                                        <div id="hero-slides" class="owl-carousel owl-theme">
+                                            <div><img id="hero-item-selected" src="assets/photos/Default/1PNG.png"></div>
+                                            <div><img id="hero-item-1" src="assets/photos/Default/1PNG.png"></div>
+                                            <div><img id="hero-item-2" src="assets/photos/Default/1PNG.png"></div>
+                                            <div><img id="hero-item-3" src="assets/photos/Default/1PNG.png"></div>
+                                            <div><img id="hero-item-4" src="assets/photos/Default/1PNG.png"></div>
+                                            <div><img id="hero-item-5" src="assets/photos/Default/1PNG.png"></div>
+                                            <div><img id="hero-item-6" src="assets/photos/Default/1PNG.png"></div>
+                                        </div>
+                                        <div class="customNavigation heroLeftNav hidden">
+                                            <span class="pager-left hero-pager"><a class="btn btn-link hero-prev"><img src="/assets/logos/leftarrow.svg"></a>
+                                        </span>
+                                        </div>
+                                        <div class="customNavigation heroRightNav hidden">
+                                            <span class="pager-right hero-pager"><a class="btn btn-link hero-next"><img src="/assets/logos/rightarrow.svg"></a>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row text-center text-lg-left modal-row">
+                                    <div class="col-lg-4 col-md-4 col-xs-6 modal-photo-container">
+                                        <img class="img-fluid img-thumbnail modal-photo" id="modal-project-img-1" src="assets/photos/Default/1PNG.png" alt="">
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-xs-6 modal-photo-container">
+                                        <img class="img-fluid img-thumbnail modal-photo" id="modal-project-img-2" src="assets/photos/Default/1PNG.png" alt="">
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-xs-6 modal-photo-container">
+                                        <img class="img-fluid img-thumbnail modal-photo" id="modal-project-img-3" src="assets/photos/Default/1PNG.png" alt="">
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-xs-6 modal-photo-container">
+                                        <img class="img-fluid img-thumbnail modal-photo" id="modal-project-img-4" src="assets/photos/Default/1PNG.png" alt="">
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-xs-6 modal-photo-container">
+                                        <img class="img-fluid img-thumbnail modal-photo" id="modal-project-img-5" src="assets/photos/Default/1PNG.png" alt="">
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-xs-6 modal-photo-container">
+                                        <img class="img-fluid img-thumbnail modal-photo" id="modal-project-img-6" src="assets/photos/Default/1PNG.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="row modal-info">
+                                        <div class="row col-md-5 col-xs-12 modal-info-items">
+                                            <ul>
+                                                <li class="modal-title"><i class="material-icons">minimize</i><span id="modal-project-title"></span></li>
+                                                <li class="modal-category"><i class="material-icons">minimize</i><span id="modal-project-category"></span> </li>
+                                                <li class="modal-location"><i class="material-icons">minimize</i><span id="modal-project-location"></span> </li>
+                                            </ul>
+                                        </div>
+                                        <div class="row col-md-7 col-xs-12 modal-info-description">
+                                            <p class="modal-description" id="modal-project-description"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="modal-foot-close" class="btn btn-default hidden" data-dismiss="modal">Back to gallery <i class="material-icons">chevron_right</i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="intro">
+            <div id="intro-splash">
+                <video autoplay no-controls playsinline muted loop class="landing-video" id="hero-video">
+                    <source src="/assets/videos/Seed-30s.mp4">
+                </video>
+                <img src="/assets/photos/Header-Subhead/SeedHeader2-976x396-2x.png" class="hidden" id="index-landing-hero">
+            </div>
+            <div class="row" id="intro">
+                <div class="col-md-5 col-sm-12 intro-left center-block">
+                    <img src='/assets/photos/Header-Subhead/Seed-Header-306x340-2x.png' class="col-12" id="intro-left-img">
+                    <div id="landing-project-text" class="col-12">
+                        <h6>CENTURY PLAZA</h6>
+                    </div>
+                    <div class="col-12" id="landing-project">
+                        <button data-id="1" id="landing-project-info" class="carousel-button"><span>View Project</span> <i class="material-icons">chevron_right</i></button>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 intro-right center-block">
+                    <h3>GROW WITH US</h3>
+                    <p>Seed Landcare is a design build firm focusing on landscape construction and maintenance with an emphasis in customer service and follow through. Our young and passionate team brings a boutique touch to large scale projects throughout Southern California</p>
+                    <p>We provide Landscape Construction Maintenance services to our commercial and residential clients. With a background rooted in design and a passion for sustainable construction we take a ground-up approach to help beautify our clients projects</p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="hr-right" id="intro-hr">
+
+        <section class="maintenance target-nav" id="maintenance">
+            <div class="top-piece right-view row">
+                <div class="hero-copy col-lg-4 col-md-6 col-sm-12 reverse-order" id="maint-hero-logo">
+                    <div class="section-title">
+                        <h3 class=>MAINTENANCE</h3>
+                    </div>
+                    <div>
+                        <p class>Every landscape requires special attention, pruning, water, and fertilization. Our dedicated team will create a unique maintenance plan to keep your property looking its best all year.</p>
+                    </div>
+                    <div>
+                        <img src="assets/logos/maintenance-icon.svg">
+                    </div>
+                </div>
+                <div class="section-hero col-lg-8 col-md-6 col-sm-12">
+                    <img src="/assets/photos/Sections/Maintenance-564x282-2x.png" class="section-hero-photo-right">
+                </div>
+            </div>
+            <div class="middle-piece services-sect maint-services">
+                <div class="row service-info-title">
+                    <h4>MAINTENANCE SERVICES</h4>
+                </div>
+                <div class="row service-info">
+                    <div class="col-md-4  col-sm-12">
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Enhancements Design</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Tree Health Care</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Turf/Plant Management</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Agronomic Planning</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Budget Planning</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Irrigation/Water Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row bottom-piece slider-section">
+                <div class="slider-info col-lg-3 col-md-12 maint-project-title">
+                    <h3 class="slider-info-title  section-copy-left">MAINTENANCE</h3>
+                    <h5 class="slider-info-body section-copy-left">FEATURED</h5>
+                    <h5 class="slider-info-body section-copy-left slider-info-float">PROJECTS</h5>
+                </div>
+                <div class="maintenance-carousel bg-white col-lg-9">
+                    <div class="container-fluid carousel-back">
+                        <div id="maintenance-slides" class="owl-carousel owl-theme">
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Century-Park/CP1Ls.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Century Park</p>
+                                    <button data-id="1" id="century-park-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Water-Garden/WG1Ls.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Water Garden</p>
+                                    <button data-id="2" id="water-garden-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Bayview-Commercial/bv1s.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Bayview Commercial</p>
+                                    <button data-id="3" id="bayview-commerical-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Manhattan-Village/MV1Ls.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Manhattan Village HOA</p>
+                                    <button data-id="4" id="manhattan-village-hoa-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Pacific-Design-Center/pdc1s.png" class="slider-photo" alt="Pacific Design Center" />
+                                </a>
+                                <div class="caption">
+                                    <p>Pacific Design Center</p>
+                                    <button data-id="5" id="pacific-design-center-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Farmers-Daughter/FD1Ls.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Farmers Daughter</p>
+                                    <button data-id="6" id="farmers-daughter-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customNavigation">
+                            <span class="pager-left"><a class="btn btn-link maint-prev"><img src="/assets/logos/leftarrow.svg"></a>
+                    </span>
+                            <span class="pager-right"><a class="btn btn-link maint-next"><img src="/assets/logos/rightarrow.svg"></a>
+                    </span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="hr-left">
+
+        <section class="commercial-construction target-nav" id="commercial">
+            <div class="top-piece right-view row left-sect-copy">
+                <div class="section-hero col-lg-8 col-md-6 col-sm-12" id="commercial-hero">
+                    <img src="/assets/photos/Sections/Construction-564x282-2x.png">
+                </div>
+                <div class="hero-copy col-lg-4 col-md-6 col-sm-12" id="comm-hero-copy">
+                    <div class="solo-line">
+                        <h3>COMMERCIAL CONSTRUCTION</h3>
+                    </div>
+                    <div>
+                        <p>Working closely with owners, architects, estimators, project managers and executives our approach to construction is proactive. We solve potential problems, offer help with logistics, tackle challenging scope and vet plans from to bottom all of which saves our clients time and money.</p>
+                    </div>
+                    <div>
+                        <img src="assets/logos/Commercial-icon.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="middle-piece commercial-construction comm-services-sect right-sect-copy">
+                <div class="row service-info-title">
+                    <h4>COMMERCIAL CONSTRUCTION SERVICES</h4>
+                </div>
+
+                <div class="row service-info">
+                    <div class="col-md-4  col-sm-12">
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Estimating</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Grading</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Hardscapes</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>VE Items</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Irrigation</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Structures</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Demolition</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Drainage</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Fabrication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row bottom-piece slider-section">
+                <div class="slider-info col-lg-3 right-sect-copy move-copy-right20-tab">
+                    <h3 class="slider-info-title section-copy-right">COMMERCIAL CONSTRUCTION</h3>
+                    <h5 class="slider-info-body section-copy-right">FEATURED</h5>
+                    <h5 class="slider-info-body section-copy-right slider-info-float">PROJECTS</h5>
+                </div>
+                <div class="commercial-carousel bg-white col-lg-9">
+                    <div class="container-fluid carousel-back">
+                        <div id="commercial-slides" class="owl-carousel owl-theme">
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Pacific-Concourse/PC1s.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Pacific Concourse</p>
+                                    <button data-id="7" id="pacific-concourse-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Bayview-Commercial/bv1s.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Bayview Business Park</p>
+                                    <button data-id="8" id="bayview-business-park-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Bringing-Back-Broadway/BBB1s.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Bringing Back Broadway</p>
+                                    <button data-id="22" id="bringing-back-broadway-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/St-James-Church/sj1s.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>St. James Church</p>
+                                    <button data-id="21" id="st-james-commercial-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customNavigation">
+                            <span class="pager-left"><a class="btn btn-link commercial-prev"><img src="/assets/logos/leftarrow.svg"></a>
+            </span>
+                            <span class="pager-right"><a class="btn btn-link commercial-next"><img src="/assets/logos/rightarrow.svg"></a>
+            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <hr class="hr-right">
+
+        <section class="residential-construction target-nav" id="residential">
+            <div class="top-piece left-view row">
+                <div class="hero-copy col-lg-4 col-md-6 col-sm-12" id="res-hero-copy">
+                    <div class="padding-copy-right20-tab">
+                        <h3 class="section-copy-left solo-line">RESIDENTIAL CONSTRUCTION</h3>
+                    </div>
+                    <div class="padding-copy-right20-tab">
+                        <p class="section-copy-left">Our creative designers and professional installation crews work together to add beauty and value to unique residential properties.</p>
+                    </div>
+                    <div>
+                        <img src="assets/logos/residential-icon.svg">
+                    </div>
+                </div>
+                <div class="section-hero col-lg-8 col-md-6 col-sm-12">
+                    <img src="/assets/photos/Sections/Residential-564x282-2x.png" class="section-hero-photo-right">
+                </div>
+            </div>
+            <div class="middle-piece services-sect res-services-sect">
+                <div class="row service-info-title">
+                    <h4>RESIDENTIAL CONSTRUCTION SERVICES</h4>
+                </div>
+
+                <div class="row service-info">
+                    <div class="col-md-4  col-sm-12">
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Consultation</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Hardscapes</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Lighting</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Design</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Pools &amp; Spas</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Garden Installation</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Engineering</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Irrigation</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Retaining Walls</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row bottom-piece slider-section">
+                <div class="slider-info col-lg-3 res-project-title">
+                    <h3 class="slider-info-title section-copy-left">RESIDENTIAL CONSTRUCTION</h3>
+                    <h5 class="slider-info-body section-copy-left">FEATURED</h5>
+                    <h5 class="slider-info-body section-copy-left slider-info-float">PROJECTS</h5>
+                </div>
+                <div class="residential-carousel bg-white col-lg-9">
+                    <div class="container-fluid carousel-back">
+                        <div id="residential-slides" class="owl-carousel owl-theme">
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Hidden-Trail/HT1Ls.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Hidden Trail</p>
+                                    <button data-id="9" id="hidden-trail-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Juliette-Circle/JC1Ls.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Juliette Circle</p>
+                                    <button data-id="10" id="juliette-circle-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Victoria/VT1Ls.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Victoria</p>
+                                    <button data-id="11" id="victoria-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Andover/AD1Ls.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Andover</p>
+                                    <button data-id="12" id="andover-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Malibu/MB1Ls.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Malibu</p>
+                                    <button data-id="13" id="malibu-residential-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customNavigation">
+                            <span class="pager-left"><a class="btn btn-link residential-prev"><img src="/assets/logos/leftarrow.svg"></a>
+            </span>
+                            <span class="pager-right"><a class="btn btn-link residential-next"><img src="/assets/logos/rightarrow.svg"></a>
+            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="hr-left">
+
+        <section class="unique-projects target-nav" id="unique-projects">
+
+            <div class="top-piece right-view row left-sect-copy">
+                <div class="section-hero col-lg-8 col-md-6 col-sm-12" id="unique-hero">
+                    <img src="/assets/photos/Sections/Unique-564x282-2x.png">
+                </div>
+                <div class="hero-copy col-lg-4 col-md-6 col-sm-12" id="uni-hero-copy">
+                    <div>
+                        <h3>UNIQUE PROJECTS</h3>
+                    </div>
+                    <div>
+                        <p>Our unique projects are creative, innovative, and extraordinary. Seed Landcare has a created a niche market where our designs and out-of-the-box concepts have stamped our place in a market that doesn't exist. With a strong presence in the Los Angeles market, we are looking to conceptualize these ideas everywhere. Being creative is what we are skilled at, send us an idea and lets bring it to life!</p>
+                    </div>
+                    <div>
+                        <img src="assets/logos/UniqueProject-icon.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="middle-piece services-sect uni-services-sect right-sect-copy">
+                <div class="row service-info-title">
+                    <h4>UNIQUE PROJECT SERVICES</h4>
+                </div>
+                <div class="row service-info">
+                    <div class="col-md-4  col-sm-12">
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Greenwalls</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Greenscreens</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="col-12 service-item">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row bottom-piece slider-section">
+                <div class="slider-info col-lg-3 right-sect-copy move-copy-right20-tab">
+                    <h3 class="slider-info-title section-copy-right">UNIQUE PROJECTS</h3>
+                    <h5 class="slider-info-body section-copy-right">FEATURED</h5>
+                    <h5 class="slider-info-body section-copy-right slider-info-float">PROJECTS</h5>
+                </div>
+                <div class="unique-carousel bg-white col-lg-9">
+                    <div class="container-fluid carousel-back">
+                        <div id="unique-slides" class="owl-carousel owl-theme">
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Greenwalls/GW1Ls.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Greenwalls</p>
+                                    <button data-id="15" id="greenwalls-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Therien/TH1Ls.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Therien</p>
+                                    <button data-id="16" id="therien-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Serve-Restaurant/SV1Ls.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Serve Restaurant</p>
+                                    <button data-id="20" id="serve-restaurant-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Bringing-Back-Broadway/BBB1s.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Bringing Back Broadway</p>
+                                    <button data-id="18" id="bringing-back-broadway-unique-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customNavigation">
+                            <span class="pager-left"><a class="btn btn-link unique-prev"><img src="/assets/logos/leftarrow.svg"></a>
+                    </span>
+                            <span class="pager-right"><a class="btn btn-link unique-next"><img src="/assets/logos/rightarrow.svg"></a>
+                    </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <hr class="hr-right">
+
+        <section class="design target-nav" id="design">
+
+            <div class="top-piece left-view row">
+                <div class="hero-copy col-lg-4 col-md-6 col-sm-12" id="design-hero-copy">
+                    <div class="padding-copy-right20-tab">
+                        <h3 class="section-copy-left">DESIGN</h3>
+                    </div>
+                    <div class="padding-copy-right20-tab">
+                        <p class="section-copy-left">Design by Seed Landcare. From activating large scale commercial spaes to the complex requirements of an HOA master plan or the attention to detail on a residential project, we have the experience to handle your design needs.</p>
+                    </div>
+                    <div>
+                        <img src="assets/logos/design-icon.svg">
+                    </div>
+                </div>
+                <div class="section-hero col-lg-8 col-md-6 col-sm-12">
+                    <img src="/assets/photos/Sections/Design-564x282-2x.png" class="section-hero-photo-right">
+                </div>
+            </div>
+            <div class="middle-piece services-sect des-services-sect">
+                <div class="row service-info-title">
+                    <h4>DESIGN SERVICES</h4>
+                </div>
+
+                <div class="row service-info">
+                    <div class="col-md-4  col-sm-12">
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Concept Creation</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Plot Plans</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Engineering</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Design</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Construction Drawings</span>
+                        </div>
+                        <div class="col-12 service-item">
+                            <i class="material-icons">minimize</i><span>Design Drawings</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row bottom-piece slider-section">
+                <div class="slider-info col-lg-3 desi-project-title">
+                    <h3 class="slider-info-title section-copy-left">DESIGN</h3>
+                    <h5 class="slider-info-body section-copy-left">FEATURED</h5>
+                    <h5 class="slider-info-body section-copy-left slider-info-float">PROJECTS</h5>
+                </div>
+                <div class="design-carousel bg-white col-lg-9">
+                    <div class="container-fluid carousel-back">
+                        <div id="design-slides" class="owl-carousel owl-theme">
+                            <div class="thumbnail item">
+                                <a class="blog-thumb-img" title="">
+                                    <img src="/assets/photos/Design/D1Ls.png" class="slider-photo" />
+                                </a>
+                                <div class="caption">
+                                    <p>Design by Seed Landcare</p>
+                                    <button data-id="25" id="concept-design-lightbox" class="carousel-button"><span>View more</span> <i class="material-icons">chevron_right</i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="customNavigation">
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <hr class="hr-right">
+
+        <section id="testimonials">
+            <div class="row testi-header">
+                <div class="col-12">
+                    <h3>TESTIMONIALS</h3>
+                </div>
+            </div>
+            <div class="row testi-row">
+
+                <div class="col-lg-6 col-md-7 col-sm-12 test-team-half"><img src="/assets/photos/Team/Team.GIF" id="testi-team-img"></div>
+                <div class="col-lg-6 col-md-5 col-sm-12 testi-logo-half">
+                    <div class="row">
+                        <div class="col-12" class="testi-logo">
+                            <img src="/assets/logos/riverrock.png">
+                            <p id="testmonial-copy">"The landscaping has much improved since you took over. We're thrilled with the progress."</p>
+                        </div>
+                        <div class="col-12 testi-company">
+                            <i class="material-icons">minimize</i><span>RiverRock Real Estate Group</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="footer">
+            <div class="row footer-row">
+                <div class="col-sm-12 col-md-3 footer-logo">
+                    <ul class="footer-col">
+                        <a href="index.html">
+                            <li><img src="/assets/logos/SeedLandcare-2018Logo.png" id="footer-logo-img"></li>
+                        </a>
+                        <li><span id="footer-copyright">&copy; 2018 Seedlandcare.com</span></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-3 footer-title">
+                    <span class="adj-col">CONTACT US</span>
+                    <ul class="footer-col adj-col">
+                        <li>
+                            <a href="mailto:info@seedlandcare.com" target="_top">info@seedlandcare.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:9494567891">949.424.9774</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-3 footer-title">
+                    <span class="adj-col">ABOUT US</span>
+                    <ul class="footer-col adj-col">
+                        <li>
+                            <a href="contact.html#contact">Locations</a>
+                        </li>
+                        <li>
+                            <a href="contact.html#about-anchor">Team</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-3 footer-title">
+                    <span>@SEEDLANDCARE</span>
+                    <ul class="footer-col social-footer">
+                        <li>
+                            <a href="https://www.instagram.com/seedlandcare/?hl=en" target="_none"><i class="fa fa-instagram"></i>Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.houzz.com/pro/seedlandcare/seed-landcare" target="_none"><i class="fa fa-houzz"></i> Houzz</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/seedlandcare" target="_none"><i class="fa fa-linkedin"></i>LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/g/jquery@2.1.4,jquery.migrate@1.4.1,bootstrap@3.3.7,jquery.matchheight@0.7.0,jquery.owlcarousel@1.31">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js">
+    </script>
+    <script src="js/carousels-min.js"></script>
+    <script src="js/main-min.js"></script>
+
+</body>
+
+</html>
