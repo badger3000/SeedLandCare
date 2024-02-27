@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="28px" viewBox="0 0 30 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.655158748 0.129220835 27.990585 0.129220835 27.990585 14.6409484 0.655158748 14.6409484"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.4">
+        <g id="Seed-Desktop-Contact" transform="translate(-405.000000, -1773.000000)">
+            <g id="Group-Copy" transform="translate(420.000000, 1787.000000) scale(-1, 1) translate(-420.000000, -1787.000000) translate(405.000000, 1773.000000)">
+                <path d="M4.91972242,8.52512344 C-0.985737456,13.2329364 -1.6711341,21.5045019 3.38694331,27 L14.0808163,18.4748766 C19.9862762,13.7670636 20.6707365,5.49462678 15.6126591,0 L4.91972242,8.52512344 Z" id="Fill-9" fill="#186E48"></path>
+                <g id="Group-13" opacity="0.6" transform="translate(2.000000, 13.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-12"></g>
+                    <path d="M14.322781,0.129220835 C6.7731853,0.129220835 0.655158748,6.62566981 0.655158748,14.6410449 L14.322781,14.6410449 C21.8714677,14.6410449 27.9913121,8.14459594 27.9913121,0.129220835 L14.322781,0.129220835 Z" id="Fill-11" fill="#37B34A" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

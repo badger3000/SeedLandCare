@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="89px" viewBox="0 0 90 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.396061121 0.209250714 44.7964686 0.209250714 44.7964686 88.9990222 0.396061121 88.9990222"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Seed-Desktop-v1" transform="translate(-305.000000, -1173.000000)">
+            <g id="MAINTENANCE" transform="translate(76.000000, 868.000000)">
+                <g transform="translate(0.000000, 51.000000)" id="Page-1">
+                    <g transform="translate(229.000000, 254.000000)">
+                        <g id="Group-3" transform="translate(45.000000, 0.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M44.797202,44.6016919 C44.797202,69.1202044 24.9183565,88.9990222 0.394349745,88.9990222 L0.394349745,44.6016919 C0.394349745,20.085624 20.2756401,0.209250714 44.797202,0.209250714 L44.797202,44.6016919 Z" id="Fill-1" fill="#E9F6F0" mask="url(#mask-2)"></path>
+                        </g>
+                        <path d="M0,43.9975772 C0,68.2980012 20.1472937,88 45,88 L45,43.9975772 C45,19.699576 24.8527063,0 0,0 L0,43.9975772 Z" id="Fill-4" fill="#C3E9C9"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

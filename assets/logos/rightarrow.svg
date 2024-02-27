@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Seed-Desktop-v1" transform="translate(-965.000000, -1443.000000)">
+            <g id="MAINTENANCE" transform="translate(76.000000, 854.000000)">
+                <g id="Carousel" transform="translate(179.000000, 475.000000)">
+                    <g id="right" transform="translate(728.500000, 132.500000) scale(-1, 1) translate(-728.500000, -132.500000) translate(710.000000, 114.000000)">
+                        <circle id="Oval-3" fill="#B5DECD" cx="18.5" cy="18.5" r="18.5"></circle>
+                        <g id="transfer" transform="translate(16.500000, 18.000000) scale(-1, 1) translate(-16.500000, -18.000000) translate(12.000000, 10.000000)" fill="#000000" fill-rule="nonzero">
+                            <path d="M8.72680717,7.34770384 L1.58050494,0.269915651 C1.21751816,-0.0899718838 0.635226865,-0.0899718838 0.272240085,0.269915651 C-0.090746695,0.629803187 -0.090746695,1.20712277 0.272240085,1.56701031 L6.5754093,8 L0.272240085,14.4329897 C-0.090746695,14.7928772 -0.090746695,15.3701968 0.272240085,15.7300843 C0.453733475,15.9100281 0.688162437,16 0.930153624,16 C1.17214481,16 1.40657377,15.9100281 1.58806716,15.7300843 L8.7343694,8.6447985 C9.08979395,8.29240862 9.08979395,7.70759138 8.72680717,7.34770384 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
